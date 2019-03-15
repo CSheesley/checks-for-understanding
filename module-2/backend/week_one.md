@@ -7,10 +7,20 @@ Note: When you're done, submit a PR.
 ### Week 1 Questions
 
 1. List the five common HTTP verbs and what the purpose is of each verb.
+Get - READ
+Post - CREATE
+Put - all UPDATE
+Patch - partial UPDATE
+Delete - DESTROY
 
 2. What is Sinatra?
+- 
 
-3. What is MVC?
+3. What is MVC? 
+MODEL - Data Logic -  Interacts with the database.
+VIEW - View Logic - Responsible for what the client's browser sees.
+CONTROLLER - Application Logic - Traffic Cop. Transfers data and requests to the proper places.
+* Together, they create the functionality of web pages. 
 
 4. Why do we follow conventions when creating our actions/path names in our Sinatra routes?
 
