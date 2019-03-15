@@ -14,7 +14,7 @@ Patch - partial UPDATE
 Delete - DESTROY
 
 2. What is Sinatra?
-- 
+- A DSL (Domain Specific Language) witten in Ruby, which is a Web Framework.
 
 3. What is MVC? 
 MODEL - Data Logic -  Interacts with the database.
