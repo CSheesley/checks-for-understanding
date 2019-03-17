@@ -44,11 +44,11 @@ Note: When you're done, submit a PR.
     render locals: { name: 'Mr. Ed'}
     erb :index
   end
-  ``
+  ```
   Maybe? Although I don't fully understand.
 
 8. What's the purpose of ERB?
-- ERB is a file format that allows us to use Ruby code in our view files. We use `erb` tags to deliniate what information is rendered and visible by the client, and what is simply code that is used for calcualting. <%= %>, or <% %>.
+- Embedded Ruby is a file format that allows us to use Ruby code in our view files. We use `erb` tags to deliniate what information is rendered and visible by the client, and what is simply code that is used for calcualting. <%= %>, or <% %>.
 
 9. Why do I need a development AND test database?
 - A test database is used simply for testing. The information that you provide in your model and feature tests populate this database. Each time a test is ran, the test database is cleaned - populated - checked - and then cleaned again for the next test. An acronym for this is SEAT (Setup, Exercise, Assertion, Teardown).
@@ -70,19 +70,19 @@ Note: When you're done, submit a PR.
 - 2) (name = ?, age = ?, @user.name, @user.age) * maybe? 
 
 13. What's an ORM? What does it do?
-- Object Relational Mapper. It allows us to interact with databases in an easier fashion. ORM's created object instances for each row in a database (where colums act as attributes). This allows us to use Ruby code to interact with these resources.
+- Object Relational Mapper. It allows us to interact with databases in an easier fashion. ORM's created object instances for each row in a database (where columns act as attributes). This allows us to use Ruby code to interact with these resources.
 
 14. What's the most commonly used ORM in ruby (Sinatra & Rails)?
 - Active Record
 
 15. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
-- INDEX   - get '/comedians'          display a list of all comedians
-- NEW     - get '/comedians/new'      shows a form for creating new comedians
-- CREATE  - post '/comedians'         add a new comedian item to the database list  - redirect
-- SHOW    - get '/comedians/:id       display information for a single comedian
-- EDIT    - get '/comedians/:id/edit' show a form for editing a single comedian
-- UPDATE  - put '/comedians/:id       updates info for a single comedian - redirect
-- DESTROY - delete '/comedians/:id    deletes a single comedian - redirect
+- INDEX   - get '/restaurants'          display a list of all restaurants
+- NEW     - get '/restaurants/new'      shows a form for creating new restaurants
+- CREATE  - post '/restaurants'         add a new restaurant item to the database list  - redirect
+- SHOW    - get '/restaurants/:id       display information for a single restaurant
+- EDIT    - get '/restaurants/:id/edit' show a form for editing a single restaurant
+- UPDATE  - put '/restaurants/:id       updates info for a single restaurant - redirect
+- DESTROY - delete '/restaurants/:id    deletes a single restaurant - redirect
 
 16. What's a migration?
 - A migration is action taken to populate or change a database.
